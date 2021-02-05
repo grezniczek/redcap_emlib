@@ -15,7 +15,7 @@ use \ExternalModules\StatementResult;
 
 class Record
 {
-    /** @var Project2 The project this record belongs to */
+    /** @var Project The project this record belongs to */
     private $project;
     /** @var string The id of this record */
     private $record_id;

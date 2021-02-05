@@ -188,7 +188,7 @@ class Project
      * @return Record 
      */
     function getRecord($record_id) {
-        if (!class_exists("\ExternalModules\Record")) include_once ("Record.php");
+        if (!class_exists("\DE\RUB\REDCapEMLib\Record")) include_once ("Record.php");
         return new Record($this->framework, $this, $record_id);
     }
 
