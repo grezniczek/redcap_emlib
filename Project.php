@@ -1086,7 +1086,7 @@ class Project
     }
 
     function getMissingDataCodes() {
-        return $this->proj->project["missing_data_codes"] ?: array();
+        return parseEnum($this->proj->project["missing_data_codes"]);
     }
 
 
