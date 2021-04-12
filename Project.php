@@ -1085,6 +1085,10 @@ class Project
         return $forms;
     }
 
+    function getMissingDataCodes() {
+        return $this->proj->project["missing_data_codes"] ?: array();
+    }
+
 
     /**
      * Gets the project structure (arms, events, forms, fields) of the current or specified project.
